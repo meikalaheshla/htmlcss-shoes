@@ -10,8 +10,14 @@
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Rubik Mono One', sans-serif;
+
 }
 
 h2 {
@@ -34,8 +40,7 @@ section {
 ul {
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 20px;
 }
 
 /*utility*/
@@ -58,7 +63,8 @@ ul {
     text-align: center;
 }
 
-.red-section h2 {
+.red-section h2,
+.green-section h2 {
     color: yellow
 }
 
@@ -69,6 +75,18 @@ ul {
     align-items: center;
 }
 
+.green-section {
+    background-color: green;
+}
+
+.yellow-section {
+    background-color: yellow;
+}
+
+.yellow-section h2 {
+    color: green
+}
+
 /*nav bar*/
 .section-navigator {
     position: fixed;
@@ -77,21 +95,27 @@ ul {
 
 }
 
-.section-navigator li {
+.section-navigator a {
+    text-decoration: none;
+    color: black;
     text-align: center;
     display: block;
-    margin-left: 50px;
     font-size: 30px;
-    height: 80px;
-    width: 80px;
     background-color: white;
-    line-height: 80px;
     border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 
-.section-navigator li:hover {
+.section-navigator a:hover {
     background-color: aquamarine;
     cursor: pointer;
 }
 
-.section-navigator a {}
+.section-navigator li {
+    line-height: 80px;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+
+}
