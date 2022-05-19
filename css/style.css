@@ -19,11 +19,23 @@ h2 {
 
 }
 
+main {
+    position: relative;
+}
+
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*utility*/
@@ -49,3 +61,37 @@ section {
 .red-section h2 {
     color: yellow
 }
+
+.main-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*nav bar*/
+.section-navigator {
+    position: fixed;
+    top: 80px;
+    right: 50px;
+
+}
+
+.section-navigator li {
+    text-align: center;
+    display: block;
+    margin-left: 50px;
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.section-navigator li:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.section-navigator a {}
